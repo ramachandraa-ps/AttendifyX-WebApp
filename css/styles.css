@@ -1,0 +1,151 @@
+body {
+    font-family: 'Times New Roman', 'Castoro', serif;
+    background-color: #FFFFFF; /* Overall background color */
+    color: #4B2E39;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFFFFF; /* White background */
+    color: #0047AB; /* Deep Blue text color */
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Header shadow */
+    border-bottom: 1px solid #E0E0E0; /* Subtle border for separation */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+}
+
+header .navigation .menu {
+    position: relative;
+    margin-right: 20px;
+}
+
+header .navigation .menu .menu-btn {
+    background-color: #0047AB; /* Deep Blue */
+    color: #FAF3E0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+header .navigation .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #E2725B; /* Terracotta */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 160px;
+}
+
+header .navigation .submenu a {
+    color: #FAF3E0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .navigation .submenu a:hover {
+    background-color: #FF4500; /* Sunset Orange */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0047AB; /* Deep Blue */
+}
+
+header .auth {
+    display: flex;
+    align-items: center;
+}
+
+header .auth .btn {
+    background-color: #FF4500; /* Sunset Orange */
+    color: #FAF3E0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .auth .btn-primary {
+    background-color: #DAA520; /* Goldenrod */
+}
+
+header .auth .btn:hover {
+    background-color: #DAA520; /* Goldenrod */
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.features, .uses {
+    margin: 20px;
+}
+
+.features ul, .uses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li, .uses li {
+    margin-bottom: 10px;
+}
+
+.features li strong, .uses li a {
+    color: #0047AB; /* Deep Blue */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #E2725B; /* Terracotta */
+    color: #FAF3E0;
+}

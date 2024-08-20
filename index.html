@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttendifyX - Streamlined Attendance Tracking</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navigation">
+                <div class="menu">
+                    <button class="menu-btn" onclick="toggleMenu('product-menu')">Product</button>
+                    <div id="product-menu" class="submenu">
+                        <a href="product/geolocation.html">Geolocation Check-In/Out</a>
+                        <a href="product/manual-location.html">Manual Location Check-In/Out</a>
+                        <a href="product/working-hours.html">Calculate Working Hours</a>
+                        <a href="product/data-integrity.html">Data Integrity</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="menu-btn" onclick="toggleMenu('uses-menu')">Uses</button>
+                    <div id="uses-menu" class="submenu">
+                        <a href="uses/potential-use1.html">Use Case 1</a>
+                        <a href="uses/potential-use2.html">Use Case 2</a>
+                        <a href="uses/potential-use3.html">Use Case 3</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="AttendifyX Logo" />
+                <span>AttendifyX</span>
+            </div>
+            <div class="auth">
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn btn-primary">START NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to AttendifyX</h1>
+            <p>Your ultimate solution for automated, geo-location-based attendance tracking. Manage your workforce's attendance efficiently across multiple locations, reduce errors, and enhance operational efficiency.</p>
+            <a href="register.html" class="btn btn-primary">Get Started Now</a>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Geolocation-Based Check-In and Check-Out:</strong> Automatic tracking within a 200-meter radius of your office.</li>
+                <li><strong>Manual Location Check-In/Check-Out:</strong> Easily manage offsite work attendance.</li>
+                <li><strong>Total Working Hours Calculation:</strong> Accurate tracking of work hours based on check-in/check-out data.</li>
+                <li><strong>Data Accuracy and Integrity:</strong> Reliable, tamper-proof records with real-time synchronization.</li>
+            </ul>
+        </section>
+
+        <section class="uses">
+            <h2>Potential Uses</h2>
+            <p>AttendifyX is versatile and can be adapted for various industries and use cases. Explore the potential uses:</p>
+            <ul>
+                <li><a href="uses/potential-use1.html">Corporate Offices</a></li>
+                <li><a href="uses/potential-use2.html">Field Services</a></li>
+                <li><a href="uses/potential-use3.html">Remote Work Management</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AttendifyX. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu(menuId) {
+            var menu = document.getElementById(menuId);
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
