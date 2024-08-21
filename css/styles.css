@@ -17,15 +17,17 @@ body {
 }
 
 
+
 /* Header styling */
 header {
     background-color: #FFFFFF; /* White background */
     color: #333333; /* Dark Grey text */
-    padding: 15px 0;
+    padding: 25px 0; /* Increased padding from 15px to 25px */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-bottom: 1px solid #E0E0E0; /* Light grey border */
 }
 
+/* Container to align header elements */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -33,6 +35,30 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Align logo and navigation to the left */
+header .logo-nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styling */
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Dark Grey */
 }
 
 /* Navigation menu styling */
@@ -47,19 +73,18 @@ header .navigation .menu {
 }
 
 header .navigation .menu .menu-btn {
-    background-color: #FF7043; /* Bright Orange */
-    color: #FFFFFF; /* White text */
+    background-color: transparent;
+    color: #333333; /* Dark Grey text */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 header .navigation .menu .menu-btn:hover {
-    background-color: #FF5722; /* Slightly darker orange on hover */
+    background-color: #f0f0f0; /* Light grey on hover */
 }
 
 header .navigation .submenu {
@@ -86,50 +111,87 @@ header .navigation .submenu a:hover {
     background-color: #FF7043; /* Bright Orange on hover */
 }
 
-/* Logo styling */
-header .logo {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header .logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-header .logo span {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333333; /* Dark Grey */
-}
-
-/* Authentication buttons */
+/* Authentication buttons aligned to the right */
 header .auth {
     display: flex;
     align-items: center;
 }
 
 header .auth .btn {
-    background-color: #333333; /* Dark Grey background */
-    color: #FFFFFF; /* White text */
+    background-color: transparent;
+    color: #333333; /* Dark Grey text */
+    border: 2px solid #FF7043; /* Orange border */
     padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .auth .btn:hover {
+    background-color: #FF7043; /* Bright Orange on hover */
+    color: #FFFFFF; /* White text on hover */
+}
+
+header .auth .btn-primary {
+    background-color: #FF7043; /* Bright Orange background */
+    color: #FFFFFF; /* White text */
+}
+
+header .auth .btn-primary:hover {
+    background-color: #333333; /* Dark Grey background on hover */
+    border-color: #333333; /* Dark Grey border on hover */
+}
+/* Ensure proper display and positioning of submenus */
+.menu {
+    position: relative; /* For positioning submenu */
+    margin-right: 20px;
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: #333333; /* Dark Grey text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
-header .auth .btn-primary {
-    background-color: #FF7043; /* Bright Orange background */
+/* Hide submenu by default */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1000;
+    top: 100%; /* Position below the button */
+    left: 0;
 }
 
-header .auth .btn:hover {
-    background-color: #FF5722; /* Darker orange on hover */
+/* Submenu item styles */
+.submenu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333333; /* Dark Grey text */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+/* Hover effect for submenu items */
+.submenu a:hover {
+    background-color: #FF7043; /* Bright Orange */
+    color: #FFFFFF; /* White text */
+}
+
+
+
+
 
 /* Main content styling */
 main {

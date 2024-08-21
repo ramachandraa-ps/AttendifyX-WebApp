@@ -6,40 +6,46 @@
     <title>AttendifyX - Streamlined Attendance Tracking</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    
     <header>
         <div class="container">
-            <nav class="navigation">
+            <div class="logo-nav-wrapper">
+                <!-- Logo and App Name -->
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="AttendifyX Logo">
+                    <span>AttendifyX</span>
+                </div>
+    
                 <div class="menu">
-                    <button class="menu-btn" onclick="toggleMenu('product-menu')">Product</button>
-                    <div id="product-menu" class="submenu">
-                        <a href="product/geolocation.html">Geolocation Check-In/Out</a>
-                        <a href="product/manual-location.html">Manual Location Check-In/Out</a>
-                        <a href="product/working-hours.html">Calculate Working Hours</a>
-                        <a href="product/data-integrity.html">Data Integrity</a>
+                    <button class="menu-btn">Product</button>
+                    <div class="submenu">
+                        <a href="product/feature1.html">Feature 1</a>
+                        <a href="product/feature2.html">Feature 2</a>
+                        <a href="product/feature3.html">Feature 3</a>
                     </div>
                 </div>
                 <div class="menu">
-                    <button class="menu-btn" onclick="toggleMenu('uses-menu')">Uses</button>
-                    <div id="uses-menu" class="submenu">
-                        <a href="uses/potential-use1.html">Use Case 1</a>
-                        <a href="uses/potential-use2.html">Use Case 2</a>
-                        <a href="uses/potential-use3.html">Use Case 3</a>
+                    <button class="menu-btn">Uses</button>
+                    <div class="submenu">
+                        <a href="uses/potential-use1.html">Corporate Offices</a>
+                        <a href="uses/potential-use2.html">Field Services</a>
+                        <a href="uses/potential-use3.html">Remote Work Management</a>
                     </div>
                 </div>
-            </nav>
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="AttendifyX Logo" />
-                <span>AttendifyX</span>
+                
             </div>
+    
+            <!-- Right Side Buttons (Login, Register, Start Now) -->
             <div class="auth">
-                <a href="login.html" class="btn">Login</a>
+                <a href="#" class="btn">Login</a>
                 <a href="register.html" class="btn btn-primary">START NOW</a>
             </div>
         </div>
     </header>
-
+    
     <main>
         <section class="intro">
             <h1>Welcome to AttendifyX</h1>
@@ -72,15 +78,6 @@
         <p>&copy; 2024 AttendifyX. All rights reserved.</p>
     </footer>
 
-    <script>
-        function toggleMenu(menuId) {
-            var menu = document.getElementById(menuId);
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
