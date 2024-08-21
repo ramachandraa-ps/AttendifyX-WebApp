@@ -7,17 +7,51 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo-nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="AttendifyX Logo">
+                </a>
+    
+                <div class="menu">
+                    <button class="menu-btn">Product</button>
+                    <div class="submenu">
+                        <a href="product/feature1.html">Feature 1</a>
+                        <a href="product/feature2.html">Feature 2</a>
+                        <a href="product/feature3.html">Feature 3</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="menu-btn">Uses</button>
+                    <div class="submenu">
+                        <a href="uses/potential-use1.html">Corporate Offices</a>
+                        <a href="uses/potential-use2.html">Field Services</a>
+                        <a href="uses/potential-use3.html">Remote Work Management</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+    
+            <!-- Right Side Buttons (Login, Register, Start Now) -->
+            <div class="auth">
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn btn-primary">New User!</a>
+            </div>
+        </div>
+    </header>
     <div class="registration-container">
         <div class="registration-form">
             <h2>Create an Account</h2>
             <form id="registerForm">
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <input type="password" id="password" placeholder="Enter your Password" required>
                 </div>
                 <button type="submit" id="submit" class="btn-register">Register</button>
             </form>
